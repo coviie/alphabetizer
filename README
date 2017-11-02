@@ -1,0 +1,34 @@
+A. Written by : Jia Wen Goh
+	   On : 14-03-2017
+	   
+B. ** Purpose of program **
+   The program orders input strings based on their ASCII character values.
+   Input strings are stored either from user input, or based off input from a
+   given file. 
+   At the end of the input, the program prints out all strings in forward
+   or reverse order (based off user's choice).
+   
+   The strings will aslo be stored in a binary search tree.
+
+C. ** Uploads **
+  -= StringBST =-
+  - StringBST.h		        StringBST class definition that serves to construct
+                          and maintain a valid Binary Search Tree (that 
+                          stores strings and their frequencies). Also 
+                          contains functions that can change the state of
+                          the tree (e.g. adding and removing).
+  - StringBST.cpp	        The implementation for the StringBST class
+  
+  -= Alphabetizer =-
+  - Alphabetizer.h	    Alphabetizer class definition that runs the 
+                        Alphabetizer. It should be able to read in input
+                        from the cmdline/a file, and then print out the
+                        stored contents when prompted (i.e. eof).
+  - Alphabetizer.cpp	  The implementation for the Alphabetizer class
+
+  
+D. ** How to compile and run **
+   As there exists a Makefile:
+       compile: make
+       run:     [for interactive mode]: ./alphabetizer
+                [for automated mode]:   ./alphabetizer order filename
